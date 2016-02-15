@@ -3,18 +3,9 @@ import sys, string, getpass, time, datetime
 import happybase
 import pprint
 import pickle, base64
-#from bitstring import BitArray
 import socket
 import time
 import json
-#import bitcoin_pb2, base64
-#from subprocess import call
-
-#from kafka import KafkaClient, SimpleProducer
-
-
-
-
 
 
 
@@ -46,13 +37,13 @@ def hbase_init():
 
 
 #### Kafka stuff
-kafka = None
-kafka_producer = None
-kafka_topic = "bitcoin_blocks"
-def kafka_init():
-	global kafka, kafka_producer, kafka_topic
-	kafka = KafkaClient("ec2-52-72-36-43.compute-1.amazonaws.com")
-	kafka_producer = SimpleProducer(kafka)#,batch_send=True,batch_send_every_n=20,batch_send_every_t=60)
+#kafka = None
+#kafka_producer = None
+#kafka_topic = "bitcoin_blocks"
+#def kafka_init():
+#	global kafka, kafka_producer, kafka_topic
+#	kafka = KafkaClient("ec2-52-72-36-43.compute-1.amazonaws.com")
+#	kafka_producer = SimpleProducer(kafka)#,batch_send=True,batch_send_every_n=20,batch_send_every_t=60)
 
 
 
