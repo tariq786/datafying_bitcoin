@@ -17,5 +17,6 @@ I am comparing following three modes for latency, cost and throughput.
 This is the presentation. It is worth going through this first to get an idea about the scope of the work and the tools used.
 http://bit.ly/slideshares_tariq
 
-### Cleanup ###
-Code cleanup is in progress. Please stay tuned for clean and commented code.
+## Demo ##
+Live Demo of the transaction fee calculator will be available soon. Please stay tuned.
+
