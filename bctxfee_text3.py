@@ -3,6 +3,16 @@ from jsonrpc.authproxy import AuthServiceProxy
 import json
 import sys
 
+#This is batch processing of bitcoind (locally run bitcoin daemon)
+#RPC (Remote Procedure Call) block's json stored
+#in HDFS. Currently 187,990 blocks' json representation is
+#stored in HDFS. The HDFS file size is around 6.5GB
+#The output of this program is block_number and the corresponding
+#transaction fee in units of Satoshi. This data is written to HBASE
+#table.
+#The program takes only X minutes to run. While the streaming version
+#of the program takes XXX minutes. 
+#It is a Good illustration of time-space(memory) tradeoff
 
 conf = SparkConf().setMaster("local").setAppName("bitcoin_TransactionFee_calcultor")
 sc = SparkContext(conf=conf)
