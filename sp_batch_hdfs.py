@@ -57,10 +57,7 @@ def get_tx_fee(gen_tx):
 	#gen_tx_value = int(gen_tx_out["value"])
 
 
-#content_rdd = sc.wholeTextFiles("file:///home/ubuntu/unix_practice/spark-example/block_json_395545.txt",use_unicode=False)
-#content_rdd = sc.textFile("file:///home/ubuntu/unix_practice/spark-example/block_json_395545_rpc.txt")
-#content_rdd = sc.textFile("file:///home/ubuntu/unix_practice/bcrpc/bitcoin-inspector-webserver/bitcoin/block_384533.txt")
-content_rdd = sc.textFile("file:///home/ubuntu/unix_practice/bcrpc/bitcoin-inspector-webserver/bitcoin/2_blocks.txt")
+content_rdd = sc.textFile("file:///home/ubuntu/unix_practice/bitcoin/block_chain_full.txt")
 #content_rdd = sc.textFile("file:///home/ubuntu/unix_practice/bcrpc/bitcoin-inspector-webserver/bitcoin/block_chain_full.txt")
 
 dump_rdd = content_rdd.map(lambda x: json.dumps(x)).map(lambda x : x.decode('unicode_escape').encode('ascii','ignore'))
@@ -86,27 +83,3 @@ SaveRecord(tx_fee_rdd)
 #just to display values
 val_lst = tx_fee_rdd.take(tx_fee_rdd.count())		#use [3][1]
 print val_lst
-#for val in val_lst:
-#	print val
-#print "here"
-#print type(val_lst)
-#print val_lst[3][0]
-#print type(val_lst[3][0])
-
-#print val_lst[3][0]["value"]
-#print type(val_lst[3][0]["value"])
-#print kv_tx_json_rdd.take(kv_tx_json_rdd.count())
-
-							   
-####works
-#tx_it = [x for x in tx.toLocalIterator()]
-#print tx_it[0][7][4:68]
-#print tx_it[1][7][4:68]
-###enf of work
-
-#print lst_tx[8][0]
-#print type(lst_tx[8])
-#print "here"
-#print str(lst_tx[8])[4:-4] #gives tx_id without the enclosing quotes
-
-#print type(lst_tx)
