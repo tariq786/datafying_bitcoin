@@ -15,7 +15,7 @@ I am comparing following three modes for latency, cost and throughput.
 
 ## Presentation ##
 This is the presentation. It is worth going through this first to get an idea about the scope of the work and the tools used.
-http://bit.ly/slideshare_tariq
+http://bit.ly/slideshares_tariq
 
 ### Cleanup ###
 Code cleanup is in progress. Please stay tuned for clean and commented code.
