@@ -1,5 +1,5 @@
 # Datafying Bitcoins
-Datafying means putting data in a quantified for for tabulation and anlysis
+Datafying means putting data in a quantified form for tabulation and anlysis
 
 ## Goal ##
 The idea of this breadth first project is to calculate the evolution of transaction fee in bitcoin blockchain using BigData tools. Transaction fee has become important as mining reward halfs every 210,00 blocks. Currently the mining reward is 25 bitcoins, which will become 12.5 when the block count reaches 420000. At the time of writing this README.md, current block count is 398595. It is expected to reach 420000 blocks within next 3-4 months. To incentivize miners to verify transactions and include them in the blockchain, transaction fee has become important besides the mining reward. This project calculates this transaction fee for blocks 210000 and up till the current block count. This fee and the corresponding block number is then stored in the database. HBase is being used as the distributed database for storing this information.
