@@ -14,7 +14,7 @@ I am comparing following three modes for latency, cost and throughput.
  3. Remote Streaming via API mode where relevant data is retrieved by HTTP get request
 
 ## Presentation ##
-This is the presentation. It is worth to go through this first to get an idea about the scope of the work and the tool used.
+This is the presentation. It is worth going through this first to get an idea about the scope of the work and the tools used.
 http://bit.ly/slideshare_tariq
 
 ### Cleanup ###
