@@ -18,4 +18,4 @@ This is the presentation. It is worth to go through this first to get an idea ab
 http://bit.ly/slideshare_tariq
 
 ### Cleanup ###
-COde cleanup is in progress. Stay tuned for clean and commented code.
+Code cleanup is in progress. Please stay tuned for clean and commented code.
