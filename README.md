@@ -19,7 +19,7 @@ The project compares following three modes for latency, cost and throughput.
  3. Remote Streaming via API mode where relevant data is retrieved by HTTP get request
 
 - - - -
-Here is a plot of the transaction fee evolution. Y-axis units are Satoshi (10e-8 bitcoin).X-axis are block numbers going from 210000 and up till current block number. It is odd that there are two blocks with transaction fee greater than 100 bitcoins !! Possible reasons might include sender forgeting to collect the change or urgency to confirm the transaction as soon as possible.
+Here is a plot of the transaction fee evolution. Y-axis units are Satoshi (10e-8 bitcoin).X-axis are block numbers going from 210000 and up till current block number. It is odd that there is one block with transaction fee greater than 200 bitcoins !! Possible reasons might include sender forgeting to collect the change or urgency to confirm the transaction as soon as possible.
 
 ![picture alt](./transaction_fee_plot.png)
 
