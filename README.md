@@ -17,8 +17,8 @@ I am comparing following three modes for latency, cost and throughput.
 This is the presentation. It is worth going through this first to get an idea about the scope of the work and the tools used.
 http://bit.ly/slideshares_tariq
 
-## Credits ##
-My heartfelt thanks to VictorSecu from #bitcoin on freenode. His input was extremely valuable in understanding some of the concepts. I also want to acknowledge midnightmagic and gijensen from #bitcoin as well for help in debugging bitcoind and other discussion. #bitcoin channel is very valuable source for discussion and suggestions
 ## Demo ##
 Live Demo of the transaction fee calculator will be available soon. Please stay tuned.
 
+## Credits ##
+My heartfelt thanks to Victorsueca from #bitcoin channel on freenode. His input was extremely valuable in understanding some of the concepts. I also want to acknowledge midnightmagic and gijensen from #bitcoin as well for help in debugging bitcoind and other discussion. #bitcoin channel is very valuable source for discussion and suggestions
