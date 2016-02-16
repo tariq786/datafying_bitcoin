@@ -6,7 +6,11 @@ The idea of this breadth first project is to calculate the evolution of transact
 
 ## Setup ##
 For this bitcoin node was locally run on AWS (Amazon webservices) EC2 nodes (1 master and 3 slave configuration). This means i had the entire block chain data (over 70 GB) stored locally. Note Blockchain is fast growing and it has grown from 47 GB in December 2015 to 70 GB in February 2016. Running bitcoin node locally gives access to blockchain via Python RPC (Remote procedure call). Additionally, I query Toshi online API (https://bitcoin.toshi.io) to retrieve blockchain.Here is the BigData pipeline
+
+- - - -
+
 ![picture alt](./data_pipeline.png)
+
 
 ## Comparison ##
 I am comparing following three modes for latency, cost and throughput.
