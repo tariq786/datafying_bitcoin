@@ -18,6 +18,10 @@ I am comparing following three modes for latency, cost and throughput.
  2. Local Streaming mode where data is live streamed via Python RPC 
  3. Remote Streaming via API mode where relevant data is retrieved by HTTP get request
 
+- - - -
+
+![picture alt](./transaction_fee_plot.png)
+
 ## Presentation ##
 This is the presentation. It is worth going through this first to get an idea about the scope of the work and the tools used.
 http://bit.ly/slideshares_tariq
