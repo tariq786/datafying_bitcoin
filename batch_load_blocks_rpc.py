@@ -162,7 +162,7 @@ def main():
 	#try:
 	#print "Max blockchain: " + str(blockchain_height)
 	#for block_id in range(210000, blockchain_height+1): #388521
-	for block_id in range(210000, 210001): #388521
+	for block_id in range(210000, 396844): 
 
 	#for block_id in range(0, 1):
 	#for block_id in range(0, blockchain_height+1):
