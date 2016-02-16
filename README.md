@@ -13,7 +13,7 @@ For this bitcoin node was locally run on AWS (Amazon webservices) EC2 nodes (1 m
 
 
 ## Comparison ##
-I am comparing following three modes for latency, cost and throughput.
+The project compares following three modes for latency, cost and throughput.
  1. Batch processing mode where whole or partial data is stored in HDFS
  2. Local Streaming mode where data is live streamed via Python RPC 
  3. Remote Streaming via API mode where relevant data is retrieved by HTTP get request
