@@ -19,6 +19,7 @@ I am comparing following three modes for latency, cost and throughput.
  3. Remote Streaming via API mode where relevant data is retrieved by HTTP get request
 
 - - - -
+Here is a plot of the transaction fee evolution. Y-axis units are Satoshi (10e-8 bitcoin).X-axis are block numbers going from 210000 and up till current block number.
 
 ![picture alt](./transaction_fee_plot.png)
 
