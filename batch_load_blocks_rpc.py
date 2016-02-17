@@ -9,6 +9,8 @@ import json
 #This program uses RPC call to retrieve bitcoin blocks from the
 #blockchain. The blocks can then be stored on HDFS for batch
 #processing or fed directly to spark streaming application
+#The code is modified version of Jean-Marc Soumet code
+#https://github.com/ajmssc/bitcoin-inspector
 
 
 #### Bitcoin stuff
