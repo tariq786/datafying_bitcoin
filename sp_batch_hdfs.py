@@ -11,7 +11,7 @@ import sys
 #transaction fee in units of Satoshi. This data is written to HBASE
 #table.
 #The program takes only 69 minutes to run. While the streaming version
-#of the program takes XXX minutes. 
+#of the program takes 177 minutes. 
 #It is a Good illustration of time-space(memory) tradeoff
 
 conf = SparkConf().setMaster("local").setAppName("bitcoin_TransactionFee_calcultor")

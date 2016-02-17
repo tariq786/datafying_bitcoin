@@ -2,12 +2,13 @@ from jsonrpc.authproxy import AuthServiceProxy
 import sys, string, getpass, time, datetime
 import happybase
 import pprint
-import pickle, base64
 import socket
 import time
 import json
 
-
+#This program uses RPC call to retrieve bitcoin blocks from the
+#blockchain. The blocks can then be stored on HDFS for batch
+#processing or fed directly to spark streaming application
 
 
 #### Bitcoin stuff

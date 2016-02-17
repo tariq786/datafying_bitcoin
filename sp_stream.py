@@ -3,7 +3,17 @@ from jsonrpc.authproxy import AuthServiceProxy
 from pyspark.streaming import StreamingContext
 import json
 
-
+#This is stream processing of bitcoind (locally run bitcoin daemon)
+#using netcat relay. One netcat program acts as producer.
+#One on terminal, run
+#$time python ./batch_load_blocks_rpc.py | netcat -l 9999
+#On a different terminal run
+#time ./run_sp_stream.sh
+#The output of this program is block_number and the corresponding
+#transaction fee in units of Satoshi. This data is written to HBASE
+#table.
+#the program takes 177 minutes to run while the batch takes 69 minutes
+#It is a Good illustration of time-space(memory) tradeoff
 
 # Create a local StreamingContext with two working thread and batch interval of 1 second
 sc = SparkContext("local[*]", "txcount")
@@ -44,9 +54,7 @@ def get_tx_fee(gen_tx):
 	return gen_tx_json
 
 
-
-
-
+#get lines RDD
 lines = ssc.socketTextStream("localhost", 9999)
 dump_rdd = lines.map(lambda x: json.dumps(x))
 #print dump_rdd.take(2)
