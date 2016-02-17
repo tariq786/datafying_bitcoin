@@ -27,7 +27,7 @@ Here is a plot of the transaction fee evolution. Y-axis units are Satoshi (10e-8
 
 ## Presentation ##
 It is worth going through this first to get an idea about the scope of the work and the tools used.
-http://bit.ly/slideshares_tariq
+http://bit.ly/slides_tariq
 
 ## Demo ##
 Live Demo of the transaction fee calculator will be available soon. Please stay tuned.
